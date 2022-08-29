@@ -31,11 +31,11 @@ public:
 private:
 
 	UPROPERTY(EditAnywhere)
-	float MaxGrabDistance = 400;
+	float MaxGrabDistance = 500;
 		
 
 	UPROPERTY(EditAnywhere)
-	float GrabRadius = 100; 
+	float GrabRadius = 150; 
 
 	UPROPERTY(EditAnywhere)
 	float HoldDistance = 200;
