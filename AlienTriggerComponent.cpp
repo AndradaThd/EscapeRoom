@@ -1,4 +1,4 @@
-// An Andromeda Production
+
 
 
 #include "AlienTriggerComponent.h"
@@ -21,7 +21,7 @@ void UAlienTriggerComponent::TickComponent(float DeltaTime, ELevelTick TickType,
     AActor* Actor = GetAcceptableActor();
     if(Actor != nullptr)
     {
-        UPrimitiveComponent* Component =Cast<UPrimitiveComponent>(Actor->GetRootComponent());  //check if it is a primitive component
+        UPrimitiveComponent* Component =Cast<UPrimitiveComponent>(Actor->GetRootComponent());  
         if(Component != nullptr)
         {
             Component->SetSimulatePhysics(false);
