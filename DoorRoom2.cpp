@@ -1,11 +1,11 @@
-// Fill out your copyright notice in the Description page of Project Settings.
+
 
 
 #include "DoorRoom2.h"
 #include "Math/UnrealMathUtility.h"
 
 
-// Sets default values for this component's properties
+
 UDoorRoom2::UDoorRoom2()
 {
 	// Set this component to be initialized when the game starts, and to be ticked every frame.  You can turn these features
@@ -16,17 +16,14 @@ UDoorRoom2::UDoorRoom2()
 }
 
 
-// Called when the game starts
+
 void UDoorRoom2::BeginPlay()
 {
 	Super::BeginPlay();
-
 	OriginalLocation = GetOwner()->GetActorLocation();
-	
 }
 
 
-// Called every frame
 void UDoorRoom2::TickComponent(float DeltaTime, ELevelTick TickType, FActorComponentTickFunction* ThisTickFunction)
 {
 	Super::TickComponent(DeltaTime, TickType, ThisTickFunction);
